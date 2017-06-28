@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeInfomationDetailHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="热门跟帖" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="arI-yl-dod">
+                    <rect key="frame" x="13" y="11.5" width="62" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q18-ao-6hF">
+                    <rect key="frame" x="13" y="38" width="62" height="2"/>
+                    <color key="backgroundColor" red="0.40000000000000002" green="0.87058823529999996" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="Uj4-cO-RWt"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="arI-yl-dod" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="13" id="FDd-jr-BhA"/>
+                <constraint firstItem="arI-yl-dod" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="PVc-6w-etG"/>
+                <constraint firstAttribute="bottom" secondItem="q18-ao-6hF" secondAttribute="bottom" id="cW9-OS-Ac2"/>
+                <constraint firstItem="q18-ao-6hF" firstAttribute="width" secondItem="arI-yl-dod" secondAttribute="width" id="fSV-38-GSU"/>
+                <constraint firstItem="q18-ao-6hF" firstAttribute="leading" secondItem="arI-yl-dod" secondAttribute="leading" id="hfS-WB-Bk1"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-406" y="-59"/>
+        </view>
+    </objects>
+</document>

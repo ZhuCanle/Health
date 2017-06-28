@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HePostCommentView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e9Z-eE-WxO">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dZC-ec-AK8">
+                    <rect key="frame" x="0.0" y="517" width="375" height="150"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="n5h-aF-GfB">
+                            <rect key="frame" x="15" y="10" width="345" height="60"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="Vu3-nW-K12"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVq-9A-kt3">
+                            <rect key="frame" x="15" y="80" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="82d-Vl-5Sw"/>
+                                <constraint firstAttribute="width" constant="60" id="fTq-cy-ma7"/>
+                            </constraints>
+                            <state key="normal" image="fk_photo"/>
+                            <connections>
+                                <action selector="photoButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="qg8-6K-cOx"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPc-Ph-LrG">
+                            <rect key="frame" x="300" y="110" width="60" height="30"/>
+                            <color key="backgroundColor" red="0.40000000000000002" green="0.87058823529999996" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="Z2n-MX-LMc"/>
+                                <constraint firstAttribute="width" constant="60" id="kPI-2X-s1x"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="发送"/>
+                            <connections>
+                                <action selector="sendButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="hQP-el-NMv"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="n5h-aF-GfB" firstAttribute="leading" secondItem="dZC-ec-AK8" secondAttribute="leading" constant="15" id="1TA-f9-asu"/>
+                        <constraint firstAttribute="trailing" secondItem="FPc-Ph-LrG" secondAttribute="trailing" constant="15" id="5pa-3o-F16"/>
+                        <constraint firstItem="n5h-aF-GfB" firstAttribute="top" secondItem="dZC-ec-AK8" secondAttribute="top" constant="10" id="SS7-c1-0Bc"/>
+                        <constraint firstAttribute="bottom" secondItem="qVq-9A-kt3" secondAttribute="bottom" constant="10" id="ZS9-Cc-gdM"/>
+                        <constraint firstItem="qVq-9A-kt3" firstAttribute="leading" secondItem="dZC-ec-AK8" secondAttribute="leading" constant="15" id="ma6-KZ-5w7"/>
+                        <constraint firstAttribute="bottom" secondItem="FPc-Ph-LrG" secondAttribute="bottom" constant="10" id="nkg-ve-nxJ"/>
+                        <constraint firstAttribute="height" constant="150" id="nvc-bf-KNX"/>
+                        <constraint firstAttribute="trailing" secondItem="n5h-aF-GfB" secondAttribute="trailing" constant="15" id="sMg-rT-A6N"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="e9Z-eE-WxO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="AHN-El-yHZ"/>
+                <constraint firstAttribute="trailing" secondItem="e9Z-eE-WxO" secondAttribute="trailing" id="BKo-5k-99g"/>
+                <constraint firstAttribute="trailing" secondItem="dZC-ec-AK8" secondAttribute="trailing" id="PTZ-cN-GXm"/>
+                <constraint firstItem="e9Z-eE-WxO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cl3-Ra-8hn"/>
+                <constraint firstItem="dZC-ec-AK8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jPl-At-cEm"/>
+                <constraint firstAttribute="bottom" secondItem="dZC-ec-AK8" secondAttribute="bottom" id="kHZ-9u-wqx"/>
+                <constraint firstAttribute="bottom" secondItem="e9Z-eE-WxO" secondAttribute="bottom" id="nUy-6G-Dl2"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="backgroundView" destination="e9Z-eE-WxO" id="yCN-gQ-Sfy"/>
+                <outlet property="bottomView" destination="dZC-ec-AK8" id="SDY-Xi-Lwj"/>
+                <outlet property="contentViewBottonLayoutCon" destination="kHZ-9u-wqx" id="CcQ-jx-zu3"/>
+                <outlet property="photoButton" destination="qVq-9A-kt3" id="leZ-8k-H7U"/>
+                <outlet property="sendButton" destination="FPc-Ph-LrG" id="5uz-kj-Rid"/>
+                <outlet property="textView" destination="n5h-aF-GfB" id="Dyz-vZ-IYf"/>
+            </connections>
+            <point key="canvasLocation" x="-195" y="-112"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="fk_photo" width="42" height="42"/>
+    </resources>
+</document>

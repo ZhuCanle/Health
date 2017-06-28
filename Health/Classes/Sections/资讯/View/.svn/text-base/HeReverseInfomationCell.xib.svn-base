@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HeReverseInfomationCell" id="KGk-i7-Jjw" customClass="HeReverseInfomationCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="95.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aEa-9x-xzd">
+                        <rect key="frame" x="12" y="11" width="120" height="74"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="Po7-IY-Vun"/>
+                            <constraint firstAttribute="height" constant="74" id="njf-9Y-Ot2"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="中俄健康合作高峰论坛举行微首次披露" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="toh-MY-H8m">
+                        <rect key="frame" x="142" y="11" width="166" height="38.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38.5" id="Htb-Wb-LTv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2IO-KN-3TS" customClass="TTGTagCollectionView">
+                        <rect key="frame" x="142" y="51.5" width="166" height="20"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="YAZ-81-z3o"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIW-wa-XgT">
+                        <rect key="frame" x="276" y="76.5" width="29" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title=" 10" image="praise_normal">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13分钟前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrG-Yy-OIW">
+                        <rect key="frame" x="142" y="76.5" width="42" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="2IO-KN-3TS" secondAttribute="trailing" constant="12" id="6XG-24-bUA"/>
+                    <constraint firstAttribute="trailing" secondItem="TIW-wa-XgT" secondAttribute="trailing" constant="15" id="A1V-2X-ROQ"/>
+                    <constraint firstItem="toh-MY-H8m" firstAttribute="top" secondItem="aEa-9x-xzd" secondAttribute="top" id="BCi-EU-Nwo"/>
+                    <constraint firstItem="toh-MY-H8m" firstAttribute="leading" secondItem="aEa-9x-xzd" secondAttribute="trailing" constant="10" id="Jz2-WA-Vro"/>
+                    <constraint firstItem="wrG-Yy-OIW" firstAttribute="top" secondItem="2IO-KN-3TS" secondAttribute="bottom" constant="5" id="Klc-MI-fs4"/>
+                    <constraint firstItem="2IO-KN-3TS" firstAttribute="leading" secondItem="aEa-9x-xzd" secondAttribute="trailing" constant="10" id="Xa4-MF-36S"/>
+                    <constraint firstItem="wrG-Yy-OIW" firstAttribute="leading" secondItem="2IO-KN-3TS" secondAttribute="leading" id="ZjU-FA-aEb"/>
+                    <constraint firstItem="aEa-9x-xzd" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="bDe-ZE-k8D"/>
+                    <constraint firstAttribute="trailing" secondItem="toh-MY-H8m" secondAttribute="trailing" constant="12" id="bOj-c7-o1K"/>
+                    <constraint firstItem="aEa-9x-xzd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="fOl-Ok-aNx"/>
+                    <constraint firstItem="2IO-KN-3TS" firstAttribute="top" secondItem="toh-MY-H8m" secondAttribute="bottom" constant="2" id="rSE-zj-nEn"/>
+                    <constraint firstItem="TIW-wa-XgT" firstAttribute="top" secondItem="2IO-KN-3TS" secondAttribute="bottom" constant="5" id="s43-Jb-Eda"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="infoImageView" destination="aEa-9x-xzd" id="Upi-80-gxG"/>
+                <outlet property="priaseButton" destination="TIW-wa-XgT" id="QWo-WQ-qUu"/>
+                <outlet property="tagContentView" destination="2IO-KN-3TS" id="uTn-eB-EVw"/>
+                <outlet property="timeLabel" destination="wrG-Yy-OIW" id="2RB-YX-WO1"/>
+                <outlet property="titleLabel" destination="toh-MY-H8m" id="TsY-D5-nU3"/>
+            </connections>
+            <point key="canvasLocation" x="-262" y="87"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="praise_normal" width="12" height="12"/>
+    </resources>
+</document>
